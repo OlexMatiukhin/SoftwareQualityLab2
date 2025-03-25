@@ -13,10 +13,10 @@ import static org.junit.Assert.assertEquals;
 */public class CirculeTest {
 
     private final Circule circule = new Circule(3);
+
     @Test
     public void whenRadiusIs_3_ThenCircumferenceIs_18_Point_84() {
         assertEquals(circule.getCircumference(), 18.84, 0.01);
-
     }
 
     @Test
@@ -26,16 +26,13 @@ import static org.junit.Assert.assertEquals;
 
     @Test
     public void whenRadiusIs_3_AndAngelInDegreesIs_60_ThenAngleInRadiansIs_1_Point_047() {
-
         assertEquals(circule.getAngleInRadians(60),1.047, 0.01);
     }
-
 
     @Test
     public void whenRadiusIs_3_AndAngelInRadiansIs_1Point_047_ThenArcLengthIs_3_Point141 () {
     assertEquals(circule.getArcLength(1.047), 3.141,0.01);
     }
-
 
     @Test
     public void whenRadiusIs_3_AndAngelInRadiansIs_1_Point_047_ThenSectorAreaIs_4_Point_712() {
@@ -53,7 +50,6 @@ import static org.junit.Assert.assertEquals;
     }
 
     @Test
-
     public void WhenRadiusIs_3_ThentCircumscribedSquareSideIs_6 () {
         assertEquals(circule.getCircumscribedSquareSide(),6,0.01);
     }

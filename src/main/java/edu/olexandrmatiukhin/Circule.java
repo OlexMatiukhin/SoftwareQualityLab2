@@ -67,14 +67,10 @@ public class Circule {
     // Отримати сторону вписанного рівностороннього трикутника
     public double getInscribedEquilateralTriangleSide(){
         return 2 * radius * sin(getAngleInRadians(60));
-
     }
 
     // Отримати сторону описанного рівностороннього трикутника-
     public double getCircumscibedEquilateralTriangleSide(){
         return 2 * radius * sqrt(3);
     }
-
-
-
 }
